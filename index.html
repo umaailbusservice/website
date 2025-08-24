@@ -1,425 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=6.0">
-  <title>Umaail Bus Service - Bangalore</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+      <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Umaail - Professional transportation services in Bangalore for IT, BPO, pharma, and manufacturing sectors." />
+  <meta name="keywords" content="Umaail, transportation, Bangalore, employee transport, corporate shuttle, IT services, BPO travel" />
+  <meta name="author" content="Umaail Team" />
+  <!-- Favicon / Logo -->
+  <link rel="icon" href="logo/logo-placeholder.png" type="image/png" />
+
+  <title>UMAAIL Bus Service</title>
+
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="navandfoot/nav.css" />
+  <link rel="stylesheet" href="navandfoot/footer.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Cinzel:wght@400..900&family=Imperial+Script&family=League+Script&family=Poiret+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+</style>
   <style>
-   body {
-    font-family: "Times New Roman", Times, serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Cinzel:wght@400..900&family=Imperial+Script&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=League+Script&family=Poiret+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+</style>
 
-
-    /* Hero Section */
-    .hero-section {
-      background-image: url('banner-image.jpg'); /* Replace with your uploaded banner image */
-      background-size: cover;
-      background-position: center;
-      background-attachment: scroll;
-      height: 600px; /* Adjust for better visibility */
-      color: rgb(0, 0, 0);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .services-section {
-      background-color: #2c2a8c;
-      color: white;
-      padding: 50px 0;
-    }
-
-    /* Counter Section */
-    .counter-section {
-      background-color: #2c2a8c;
-      color: white;
-      padding: 50px 0;
-    }
-
-    .counter-section .counter {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #f1c40f;
-    }
-
-    .counter-section p {
-      margin-top: 10px;
-      font-size: 1.25rem;
-      font-weight: 500;
-    }
-
-    /* Testimonial Section */
-    .testimonial-section {
-      padding: 50px;
-      background-color: #f9f9f9;
-    }
-
-    .testimonial-section .testimonial {
-      background-color: #fff;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .testimonial-section img {
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-    }
-
-    .testimonial-section blockquote {
-      font-style: italic;
-      margin-top: 20px;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-<nav class="navbar navbar-expand-lg" style="background-color: #004080;">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="logo_1.png" alt="Umaail Bus Service Logo" width="40" height="40" class="d-inline-block align-text-top">
-        Umaail Bus Service
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: white;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html" style="color: white;">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact" style="color: white;">Contact</a>
-          </li>
-        </ul>
+
+  <header class="header">
+    <div class="left">
+      <img src="logo/logo-placeholder.png" alt="Logo" class="logo-icon" />
+      <div class="logo-text">
+        <span class="logo-u">U</span><span class="logo-mail">MAA<span class="logo-u">I</span>L</span>
       </div>
     </div>
-  </nav>
-  
 
-<!-- Hero Section -->
-<section class="hero-section">
-    <div>
-      <h1>Welcome to Umaail Bus Service</h1>
-      <p>Reliable and Comfortable Bus Services in Bangalore</p>
-      <p>"On Every Ride , We're by Your Side With Safety as our Guide"</p>
-      <a href="#" class="btn btn-primary btn-lg">Book Now</a>
+    <!-- Hamburger -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar" aria-hidden="true">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="service.html">Services</a>
+      <a href="clients.html">Clients</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Overlay -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <i class="ri-phone-fill"></i> Contact Us Now <span class="number">(+91) 89512 95139</span>
+    </div>
+  </header>
+
+
+
+  <section class="hero">
+    <div class="slider" id="slider">
+      <img src="bus/bus4.JPG" class="active" />
+      <img src="bus/bus1.JPG" class="active" />
+      <img src="bus/bus3.JPG" class="active" />
+    </div>
+    <div class="hero-content">
+      <h1 class="headline">
+  <span class="line">Your business deserves more</span>
+  <span class="line">than   <span class="highlight">the   best</span></span><br>
+  <span class="line">It deserves the right partner more than</span>
+  <span class="line">  a service  <span class="highlight">a partnership</span> that understands.</span>
+
+</h1>
+      <div class="cta">
+        
+        <a href="contact.html"class="line">Get Started</a>
+      </div>
     </div>
   </section>
-  
-  <!-- CSS for larger fonts -->
-  <style>
-    .hero-section h1 {
-        font-size: 4rem; /* Adjust this value for a larger heading */
-        font-weight: bold;
-        color: #ff0000;
-    }
-  
-    .hero-section p {
-        font-size: 1.5rem;
-        font-weight: bold; /* Adjust this value for a larger paragraph */
-    }
+
+<div class="booking-form">
+  <form id="simpleBusForm">
+
+    <!-- NAME -->
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    </div>
+
+    <!-- ORGANIZATION -->
+    <div class="form-group">
+      <label for="organization">School / Company Name</label>
+      <input type="text" id="organization" name="organization" placeholder="Organization name" required />
+    </div>
+
+    <!-- PURPOSE -->
+    <div class="form-group">
+      <label for="purpose">Purpose / Reason</label>
+      <input type="text" id="purpose" name="purpose" placeholder="E.g. school , corporate " required />
+    </div>
+
+    <!-- SEAT COUNT -->
+    <div class="form-group">
+      <label for="seats">Bus Count</label>
+      <input type="number" id="seats" name="seats" placeholder="How many bus needed?" required />
+    </div>
+
+    <!-- EXTRA MESSAGE -->
+    <div class="form-group">
+      <label for="message">Extra Info</label>
+      <textarea id="message" name="message" placeholder="Enter any additional message..." rows="3"></textarea>
+    </div>
+
+    <!-- SUBMIT -->
+    <div class="form-group submit-btn">
+      <button type="submit">Submit </button>
+    </div>
+
+  </form>
+</div>
+
+<section class="about-section">
+  <div class="about-left">
+    <h5 class="about-subtitle">
+      We believe a great journey is just about reaching a destination.<br>
+      It's about how you get there. Every mile.
+    </h5>
+
+    <h2 class="about-heading">
+      More Than <span id="counter">25</span>+ Years We Provide 
+      <span class="highlight">Bus Charter</span> Service For You
+    </h2>
+
+    <p class="about-description">
+      At Umaail we believe a great journey isn’t just about reaching your destination  it’s about how you get there. Every mile with us is built on trust, comfort, and care. From smooth rides to attentive service, we make your journey matter. Not just driven by care  we’re driven by purpose. Whether it’s your daily commute or a long-distance trip, we’re here to turn every ride into a reliable, relaxing experience. Choose more than just the best  choose a travel partner that understands your journey.
+    </p>
+
+    <div class="features-grid">
+      <ul>
+        <li>✅ Brilliant Client Service</li>
+        <li>✅ 24/7 Support</li>
+        <li>✅ Free Consultations</li>
+      </ul>
+      <ul>
+        <li>✅ User Experience</li>
+        <li>✅ Big Data & Analytics</li>
+        <li>✅ Quick Tips and Advice</li>
+      </ul>
+    </div>
+
+    <a href="contact.html" class="more-btn">More About Us</a>
+  </div>
+
+  <div class="about-right">
+    <div class="image-wrapper">
+      <img src="bus/bus3.jpg" alt="Bus Service" class="about-image" />
+    </div>
+  </div>
+</section>
+
+<section class="why-choose-us">
+  <h2>Why Choose Us</h2>
+  <p>We deliver excellence in every journey. Here’s what sets us apart.</p>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-icon">
+        <img src="icons/students.svg" alt="Students Icon" />
+      </div>
+      <div class="stat-info">
+        <div class="counter" data-target="5000">0</div><span class="plus">+</span>
+        <p>Students</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">
+        <img src="icons/performance.svg" alt="Performance Icon" />
+      </div>
+      <div class="stat-info">
+        <div class="counter" data-target="5000">0</div><span class="plus">+</span>
+        <p>Performance Per Day</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">
+        <img src="icons/road-alt-fill.svg" alt="Kilometers Icon" />
+      </div>
+      <div class="stat-info">
+        <div class="counter" data-target="5000">0</div><span class="plus">+</span>
+        <p>Kilometers</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">
+        <img src="icons/bus.svg" alt="Buses Icon" />
+      </div>
+      <div class="stat-info">
+        <div class="counter" data-target="100">0</div><span class="plus">+</span>
+        <p>Buses</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">
+        <img src="icons/school.svg" alt="Schools Icon" />
+      </div>
+      <div class="stat-info">
+        <div class="counter" data-target="10">0</div><span class="plus">+</span>
+        <p>Schools</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">
+        <img src="icons/corporate-fare.svg" alt="Corporates Icon" />
+      </div>
+      <div class="stat-info">
+        <div class="counter" data-target="5">0</div><span class="plus">+</span>
+        <p>Corporates</p>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">
+        <img src="icons/teamwork.svg" alt="Operating Team Icon" />
+      </div>
+      <div class="stat-info">
+        <div class="counter" data-target="150">0</div><span class="plus">+</span>
+        <p>Operating Team</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="our-services-section">
+  <div class="section-heading">
+    <h2>Our Services</h2>
+    <p>Explore features crafted to elevate your travel experience.</p>
+  </div>
+
+  <div class="services-row top-row">
+    <div class="service-card lower-card">
+      <div class="card-icon">
+        <img src="icons/safety-certificate-fill (1).svg" alt="Safety" />
+      </div>
+      <div class="card-content">
+        <h3>Safety Guarantee</h3>
+        <p>Every ride is backed with safety protocols for your peace of mind.</p>
+      </div>
+    </div>
+
+    <div class="service-card orange-card raised-card">
+      <div class="card-icon">
+        <img src="icons/discount.svg" alt="Discount" />
+      </div>
+      <div class="card-content">
+        <h3>Discount & Promo</h3>
+        <p>Get the best fares and special offers for your trips.</p>
+      </div>
+    </div>
+
+    <div class="service-card lower-card">
+      <div class="card-icon">
+        <img src="icons/file-staff.svg" alt="Staff" />
+      </div>
+      <div class="card-content">
+        <h3>Professional Staff</h3>
+        <p>Our trained staff ensures a smooth journey experience.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="services-row">
+    <div class="service-card">
+      <div class="card-icon">
+        <img src="icons/time.svg" alt="Time" />
+      </div>
+      <div class="card-content">
+        <h3>On-Time Schedule</h3>
+        <p>Never miss your bus with our strict time commitment.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="card-icon">
+        <img src="icons/tickets-solid.svg" alt="Online Booking" />
+      </div>
+      <div class="card-content">
+        <h3>Online Booking</h3>
+        <p>Easy and fast online booking anytime, anywhere.</p>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="card-icon">
+        <img src="icons/call-centre.svg" alt="Support" />
+      </div>
+      <div class="card-content">
+        <h3>24/7 Support</h3>
+        <p>Always ready to assist you with queries and support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bus-collection">
+  <div class="bus-heading">
+    <h2>Our <span>Bus</span> Collection</h2>
+    <p>Explore premium buses built for comfort & class</p>
     
-    .hero-section p {
-        font-size: 1.5rem;
-        font-weight: bold; /* Adjust this value for a larger paragraph */
-    }    
-  </style>
-  
+  </div>
 
-  <!-- Counter Section -->
-  <section class="counter-section text-white py-5">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-3">
-          <h2 class="counter" data-target="3500">0</h2><span></span>
-          <p>STUDENTS</p>
-        </div>
-        <div class="col-md-3">
-          <h2 class="counter" data-target="70">0</h2><span></span>
-          <p>BUSES</p>
-        </div>
-        <div class="col-md-3">
-          <h2 class="counter" data-target="7">0</h2><span></span>
-          <p>SCHOOLS</p>
-        </div>
-        <div class="col-md-3">
-          <h2 class="counter" data-target="150">0</h2><span></span>
-          <p>EMPLOYEES</p>
+  <div class="bus-cards">
+    <div class="bus-card">
+      <img src="bus/sbus.png" alt="Volto 403" class="bus-img" />
+      <div class="bus-info">
+        <h3>Sml Isuzu S7 </h3>
+        <ul class="features">
+          <li><img src="icons/seat.svg" alt="Seats" />52 Seat</li>
+          <li><img src="icons/truck-driver.svg" alt="Driver" /> 1 Driver Seat</li>
+          <li><img src="icons/manual.svg" alt="Manual" /> Manual</li>
+          <li><img src="icons/insurance-hand-solid.svg" alt="Insurance" /> Fully Insured</li>
+        </ul>
+        <div class="btn-row">
+          <a href="contact.html" class="book-btn">Book Now</a>
+          
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="bus-card">
+      <img src="bus/skyline.png" alt="Etiquette 101" class="bus-img" />
+      <div class="bus-info">
+        <h3>skyline next </h3>
+        <ul class="features">
+          <li><img src="icons/seat.svg" alt="Seats" /> 41 Seat</li>
+          <li><img src="icons/truck-driver.svg" alt="Driver" /> 1 Driver Seat</li>
+          <li><img src="icons/manual.svg" alt="Manual" /> Manual</li>
+          <li><img src="icons/insurance-hand-solid.svg" alt="Insurance" /> Fully Insured</li>
+        </ul>
+        <div class="btn-row">
+          <a href="contact.html" class="book-btn">Book Now</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="bus-card">
+      <img src="bus/image.png" alt="Etiquette 101" class="bus-img" />
+      <div class="bus-info">
+        <h3>Oyster Wide</h3>
+        
+        <ul class="features">
+          <li><img src="icons/seat.svg" alt="Seats" />53 Seat</li>
+          <li><img src="icons/truck-driver.svg" alt="Driver" />1 Driver Seat</li>
+          <li><img src="icons/manual.svg" alt="Manual" /> Manual</li>
+          <li><img src="icons/insurance-hand-solid.svg" alt="Insurance" /> Fully Insured</li>
+        </ul>
+        <div class="btn-row">
+          <a href="contact.html" class="book-btn">Book Now</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+
+  <!-- Testimonial Section -->
  <!-- Testimonial Section -->
- <section class="testimonial-section">
-    <div class="container">
-      <h2>Testimonial from Our Owner</h2>
-      <div class="testimonial d-flex align-items-center">
-        <img src="owner-image.jpg" alt="Owner Image"> <!-- Replace with actual owner image -->
-        <blockquote class="ms-4">
-          "At Umaail Bus Service, we strive for excellence in transportation by ensuring safety, reliability, and customer satisfaction. We take pride in serving our community with a commitment to quality and comfort."
-          <footer class="blockquote-footer"></footer>
-        </blockquote>
+  <section class="testimonials-section">
+    <div class="testimonial-bg">
+      <div class="testimonial-header">
+        <span>Our Testimonial</span>
+        <h2>What Our Clients Say</h2>
+        <p>Real stories from our satisfied travelers – see why people love us.</p>
       </div>
     </div>
-  </section>
 
-  <!-- Our Services Section with Boxes -->
-<section class="services-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-5">Our Services</h2>
-      <div class="row">
-        <!-- Service 1: School Transfer -->
-        <div class="col-md-3">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">School Transportation</h5>
-              <p class="card-text">Efficient and safe school transfer bus services.</p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- Service 2: Corporate/On Call -->
-        <div class="col-md-3">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Corporate/On Call</h5>
-              <p class="card-text">On-call corporate and tourist bus services available.</p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- Service 3: Tourist Bus -->
-        <div class="col-md-3">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Tourist Bus</h5>
-              <p class="card-text">Explore safe and comfortable tourist bus rides with us.</p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- Service 4: Night Bus Operation -->
-        <div class="col-md-3">
-          <div class="card text-center">
-            <div class="card-body">
-              <h5 class="card-title">Night Bus Operation</h5>
-              <p class="card-text">We offer safe and reliable night bus services.</p>
-              <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
+    <div class="testimonial-cards-wrapper">
+      <div class="testimonial-card">
+        <p>SUCCESSFUL OPERATED 10 vehicles with on time pick and drop , top notch vehicles,and well mannered drivers, over all satisfied with the service. L&T</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="client">
+          <img src="clients/c1.png" alt="Bennett">
+          <div>
+            <strong>RAMU</strong>
+            <p>L&T</p>
           </div>
         </div>
       </div>
+
+      <div class="testimonial-card">
+        <p>We chose UMAAIL for our business trip and the bus was so comfortable. The process of hiring the bus was also very seamless.</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="client">
+          <img src="clients/c2.png" alt="Laura">
+          <div>
+            <strong>Syed</strong>
+            <p>ITD CEMENTATION</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p>ON TIME SERVICE, ZERO BREAKDOWN OF VEHICLES, really impressed with the service.</p>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <div class="client">
+          <img src="clients/c9.png" alt="Fred">
+          <div>
+            <strong>MOHAN</strong>
+            <p>NCC</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      
     </div>
   </section>
-  
 
-<!-- CSS for Box Spacing and Layout -->
-<style>
-  .card {
-    border: 1px solid #f1f1f1; /* Optional: To add a subtle border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: To add shadow effect */
-  }
+  <!-- White Gap -->
+  <div class="white-gap"></div>
 
-  .card-body {
-    padding: 20px;
-  }
+  <!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="logo/logo-placeholder.png" alt="Shuttle Logo" class="logo-footer" />
+    </div>
 
-  .card-title {
-    font-weight: bold;
-    color: #2c2a8c; /* Adjust to your brand color */
-  }
-
-  .btn-primary {
-    background-color: #2c2a8c;
-    border-color: #2c2a8c;
-  }
-</style>
-
-
-  <!-- What Makes Us Different Section -->
-<section class="different-section py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Text Section -->
-        <div class="col-md-6">
-          <h3 class="text-warning">What Makes Us Different</h3>
-          <ul>
-            <li>Our team ensures 24/7 monitoring of all vehicles for safety and efficiency.</li>
-            <li>We provide real-time tracking for parents and clients, ensuring peace of mind.</li>
-            <li>All buses are equipped with fire extinguishers, medical kits, and safety features.</li>
-            <li>Each bus is staffed with a certified driver and a lady maid to ensure the safety of children.</li>
-            <li>All employees undergo rigorous training to maintain the highest standards of service.</li>
-            <li>We are committed to providing hygienic, timely, and comfortable transport services.</li>
-          </ul>
-          <a href="#" class="btn btn-primary mt-3">Read More</a>
-        </div>
-  
-        <!-- Image Section -->
-        <div class="col-md-6">
-          <img src="monitoring.jpg" alt="Monitoring Team" class="img-fluid rounded">
-        </div>
+    <div class="footer-middle">
+      <h4>Quick Links</h4>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
-  </section>
-  
-  <!-- CSS for Styling -->
-  <style>
-    .different-section {
-      background-color: #f9f9f9; /* Light background for contrast */
-    }
-  
-    .text-warning {
-      color: #f1c40f; /* Custom yellow color for the section title */
-      font-weight: bold;
-    }
-  
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-  
-    ul li {
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-  
-    .btn-primary {
-      background-color: #2c2a8c;
-      border-color: #2c2a8c;
-    }
-  
-    .img-fluid {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a nice shadow effect */
-    }
-  </style>
-  
-  <!-- Contact Section -->
-<section class="contact-section" id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <div class="row">
-        <!-- Contact Form -->
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-  
-        <!-- OpenStreetMap Embed with Address and Phone Number -->
-        <div class="col-md-6">
-          <h5>Our Location</h5>
-          <p>HBR Layout, Bangalore</p>
-          <p>Phone: 8951295139 / 7022885451</p>
-          <p>Email : Umaailbusservice@gmail.com</p>
-          <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=77.57575035095216%2C12.997867309754252%2C77.68904685974123%2C13.073793140373411&amp;layer=mapnik" style="border: 1px solid black"></iframe>
-          <br/><small><a href="https://www.openstreetmap.org/#map=14/13.03583/77.63240">View Larger Map</a></small>
-        </div>
-      </div>
+
+    <div class="footer-right">
+      <h4>Contact Info</h4>
+      <p>Hennur Main Road, Telecom Layout , 5th block HBR Layout,B,lore:45</p>
+      <p>(+91) 89512 95139</p>
+      <p>contact@umaailbus.co.in</p>
     </div>
-  </section>
-  
+  </div>
 
-  <!-- Footer Section -->
-<footer class="footer-section" style="background-color: #2c2a8c; color: white; padding: 40px 0;">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <!-- Logo and Description -->
-        <div class="col-md-3">
-          <img src="logo_12.png" alt="Logo" width="250" class="mb-3"> <!-- Replace with your actual logo image -->
-          <p>Excellence in Safe Transportation Services, Shaping Positive Travel Experiences</p>
-        </div>
-  
-        <!-- Our Services -->
-        <div class="col-md-3">
-          <h5>Our Services</h5>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-chevron-right"></i> Tourist Bus</li>
-            <li><i class="bi bi-chevron-right"></i> Night Bus Operation</li>
-            <li><i class="bi bi-chevron-right"></i> School Transfer</li>
-            <li><i class="bi bi-chevron-right"></i> Corporate/On Call</li>
-          </ul>
-        </div>
-  
-        <!-- Quick Links -->
-        <div class="col-md-3">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-chevron-right"></i> Home</li>
-            <li><i class="bi bi-chevron-right"></i> About Us</li>
-            <li><i class="bi bi-chevron-right"></i> Contact Us</li>
-          </ul>
-        </div>
-  
-        <!-- Stay Tuned (Social Media Links) -->
-        <div class="col-md-3">
-          <h5>Stay Tuned</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-white"><i class="bi bi-facebook" style="color: #f1c40f;"></i> Facebook</a></li>
-            <li><a href="#" class="text-white"><i class="bi bi-twitter" style="color: #f1c40f;"></i> Twitter</a></li>
-            <li><a href="#" class="text-white"><i class="bi bi-instagram" style="color: #f1c40f;"></i> Instagram</a></li>
-          </ul>
-        </div>
-      </div>
-  
-      <!-- Copyright -->
-      <div class="row mt-4">
-        <div class="col text-center">
-          <p>&copy; 2024 All Rights Reserved </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  
-  <!-- Bootstrap Icons CDN -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  
+  <div class="footer-bottom">
+    <p>© 2025. All rights reserved.</p>
+  </div>
+</footer>
 
-  <!-- JavaScript for Counter Animation -->
-  <script>
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-      counter.innerText = '0';
 
-      const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const current = +counter.innerText;
 
-        const increment = target / 200; // Adjust the speed by changing the number here
+<!-- Include GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="js/script.js"></script>
+<script src="navandfoot/nav.js"></script>
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-        if (current < target) {
-          counter.innerText = Math.ceil(current + increment);
-          setTimeout(updateCounter, 10);
-        } else {
-          counter.innerText = target + '+';
-        }
-      };
-
-      updateCounter();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
     });
-  </script>
+  });
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 700,
+    speedAsDuration: true,
+    easing: 'easeInOutCubic'
+  });
+</script>
 
 </body>
 </html>
+
